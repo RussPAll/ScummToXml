@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScummToXml.Tests", "ScummToXml.Tests.csproj", "{55E8A6CA-0E72-4A43-9B06-A272808C2865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScummToXml", "..\ScummToXml\ClassLibrary1\ScummToXml.csproj", "{7FC7D74B-D67B-4A2C-88C9-28F08E694D71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55E8A6CA-0E72-4A43-9B06-A272808C2865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E8A6CA-0E72-4A43-9B06-A272808C2865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E8A6CA-0E72-4A43-9B06-A272808C2865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E8A6CA-0E72-4A43-9B06-A272808C2865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC7D74B-D67B-4A2C-88C9-28F08E694D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC7D74B-D67B-4A2C-88C9-28F08E694D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC7D74B-D67B-4A2C-88C9-28F08E694D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC7D74B-D67B-4A2C-88C9-28F08E694D71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

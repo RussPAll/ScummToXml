@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FC7D74B-D67B-4A2C-88C9-28F08E694D71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScummToXml</RootNamespace>
+    <AssemblyName>ScummToXml</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\BoxdBlock.cs" />
+    <Compile Include="Domain\BoxmBlock.cs" />
+    <Compile Include="Domain\CharsetBlock.cs" />
+    <Compile Include="Domain\ClutBlock.cs" />
+    <Compile Include="Domain\CostumeBlock.cs" />
+    <Compile Include="Domain\CyclBlock.cs" />
+    <Compile Include="Domain\EncdBlock.cs" />
+    <Compile Include="Domain\EpalBlock.cs" />
+    <Compile Include="Domain\ExcdBlock.cs" />
+    <Compile Include="Domain\LflfBlock.cs" />
+    <Compile Include="Domain\LoffBlock.cs" />
+    <Compile Include="Domain\LscrBlock.cs" />
+    <Compile Include="Domain\NlscBlock.cs" />
+    <Compile Include="Domain\ObcdBlock.cs" />
+    <Compile Include="Domain\ObimBlock.cs" />
+    <Compile Include="Domain\PalsBlock.cs" />
+    <Compile Include="Domain\RmhdBlock.cs" />
+    <Compile Include="Domain\RmimBlock.cs" />
+    <Compile Include="Domain\RoomBlock.cs" />
+    <Compile Include="Domain\ScalBlock.cs" />
+    <Compile Include="Domain\ScriptBlock.cs" />
+    <Compile Include="Domain\ScummBlock.cs" />
+    <Compile Include="Domain\ScummBlockHeader.cs" />
+    <Compile Include="Domain\ScummFile.cs" />
+    <Compile Include="Domain\SoundBlock.cs" />
+    <Compile Include="Domain\TrnsBlock.cs" />
+    <Compile Include="Domain\VerbBlock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Readers\BoxDataReader.cs" />
+    <Compile Include="Readers\BoxMatrixReader.cs" />
+    <Compile Include="Readers\CharsetReader.cs" />
+    <Compile Include="Readers\ColorCycleReader.cs" />
+    <Compile Include="Readers\ClutReader.cs" />
+    <Compile Include="Readers\CostumeReader.cs" />
+    <Compile Include="Readers\EgaPaletteReader.cs" />
+    <Compile Include="Readers\EntryScriptReader.cs" />
+    <Compile Include="Readers\ExitScriptReader.cs" />
+    <Compile Include="Readers\FileReader.cs" />
+    <Compile Include="Readers\LflfReader.cs" />
+    <Compile Include="Readers\LocalScriptReader.cs" />
+    <Compile Include="Readers\LoffReader.cs" />
+    <Compile Include="Readers\NumScriptsReader.cs" />
+    <Compile Include="Readers\ObjectScriptReader.cs" />
+    <Compile Include="Readers\ObjImageReader.cs" />
+    <Compile Include="Readers\PaletteReader.cs" />
+    <Compile Include="Readers\RoomHeaderReader.cs" />
+    <Compile Include="Readers\RoomImageReader.cs" />
+    <Compile Include="Readers\RoomReader.cs" />
+    <Compile Include="Readers\ScaleSlotsReader.cs" />
+    <Compile Include="Readers\ScriptReader.cs" />
+    <Compile Include="Readers\SoundReader.cs" />
+    <Compile Include="Readers\TransparentReader.cs" />
+    <Compile Include="Readers\VerbReader.cs" />
+    <Compile Include="ScummBinaryReader.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
