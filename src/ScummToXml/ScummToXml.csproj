@@ -93,6 +93,7 @@
     <Compile Include="Readers\TransparentReader.cs" />
     <Compile Include="Readers\VerbReader.cs" />
     <Compile Include="ScummBinaryReader.cs" />
+    <Compile Include="Writers\FileWriter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

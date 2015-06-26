@@ -5,10 +5,10 @@ using NUnit.Framework;
 using ScummToXml.Domain;
 using ScummToXml.Readers;
 
-namespace ScummToXml.Tests
+namespace ScummToXml.Tests.DecodingAGame
 {
     [TestFixture]
-    public class GivenMonkeyIsland2DataFileWhenReadingObjectScripts
+    public class GivenAGameFileWhenReadingObjectScripts
     {
         private RoomBlock _room;
         private IList<ObcdBlock> _objectScripts;

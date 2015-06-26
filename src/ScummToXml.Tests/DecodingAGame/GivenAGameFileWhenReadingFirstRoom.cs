@@ -2,10 +2,10 @@
 using ScummToXml.Domain;
 using ScummToXml.Readers;
 
-namespace ScummToXml.Tests
+namespace ScummToXml.Tests.DecodingAGame
 {
     [TestFixture]
-    public class GivenMonkeyIsland2DataFileWhenReadingFirstRoom
+    public class GivenAGameFileWhenReadingFirstRoom
     {
         private RoomBlock _room;
         private const string TestFile = "../../../../mi2/MONKEY2.001";
